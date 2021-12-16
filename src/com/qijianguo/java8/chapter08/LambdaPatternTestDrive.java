@@ -20,11 +20,13 @@ public class LambdaPatternTestDrive {
     private static void factory() {
         //Product loan = ProductFactory.create("loan");
         //Product stock = ProductFactory.create("stock");
-        Supplier<Product> loanSupplier = Loan::new;
+        // Supplier<Product> loanSupplier = Loan::new;
+        TwoSupplier<Product, Integer, String> loanSupplier = Loan::new;
         Supplier<Product> stockSupplier = Stock::new;
-        Product loan = loanSupplier.get();
+        Product loan = loanSupplier.get(1, "loan");
         Product stock = stockSupplier.get();
-
+        System.out.println(loan);
+        System.out.println(stock);
     }
 
     private static void processor() {

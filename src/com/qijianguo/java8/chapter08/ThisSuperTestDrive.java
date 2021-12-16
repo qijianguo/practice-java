@@ -1,28 +1,28 @@
 package com.qijianguo.java8.chapter08;
 
-public class Test {
+public class ThisSuperTestDrive {
 
     String message = "Outer";
 
     public static void main(String[] args) {
-        Test test = new Test();
-        test.test1();
-        test.test2();
+        ThisSuperTestDrive thisSuperTestDrive = new ThisSuperTestDrive();
+        thisSuperTestDrive.innerClass();
+        thisSuperTestDrive.lambda();
     }
 
 
-    private void test2() {
+    private void lambda() {
         ITest iTest = () -> {
-            String inner = "Inner";
+            String inner = "Lambda";
             System.out.println("Lambda: " + this.message);
             return this.message;
         };
         iTest.print();
     }
 
-    private void test1() {
+    private void innerClass() {
         new ITest() {
-            String message = "Inner";
+            String message = "InnerClass";
             @Override
             public String print() {
                 System.out.println("匿名类: " + this.message);
