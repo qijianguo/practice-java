@@ -2,8 +2,8 @@ package com.qijianguo.java8.chapter07;
 
 import java.util.Spliterator;
 
-import java.util.stream.IntStream;
-importava.util.stream.StreamSupport;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * @author qijianguo

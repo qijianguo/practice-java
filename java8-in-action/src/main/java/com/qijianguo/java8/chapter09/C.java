@@ -15,11 +15,11 @@ public class C implements A, B{
         c.print();
     }
 
-    @Override
+    /*@Override
     public void print() {
         // 1.实现类中的方法优先级最高
         //System.out.println("print C.");
         // 3.显示的选择要使用哪个默认方法的实现：如果1和2都不满足，就需要C实现一个接口
-        A.super.print();
-    }
+        // A.super.print();
+    }*/
 }
