@@ -1,10 +1,9 @@
 package com.qijianguo.java8.chapter07;
 
 import java.util.Spliterator;
-import java.util.function.BinaryOperator;
+
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+importava.util.stream.StreamSupport;
 
 /**
  * @author qijianguo

@@ -35,7 +35,7 @@ public class WordCounterSpliterator implements Spliterator<Character> {
      * 把一些元素划分给第二个Spliterator并返回
      * 目的是可以并行处理
      * @return 如果不能再分割，则返回 NULL
-     */
+     */修改项目结构
     @Override
     public Spliterator<Character> trySplit() {
         int currentSize = string.length() - currentCharIdx;
